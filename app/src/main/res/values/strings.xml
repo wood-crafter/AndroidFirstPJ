@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidFirstPJ</string>
+    <string-array name="items">
+        <item>AAAA</item>
+        <item>BBBB</item>
+    </string-array>
+</resources>
