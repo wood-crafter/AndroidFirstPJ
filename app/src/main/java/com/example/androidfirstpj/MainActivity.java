@@ -2,6 +2,7 @@ package com.example.androidfirstpj;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_other);
+                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+                startActivity(intent);
             }
         });
 
