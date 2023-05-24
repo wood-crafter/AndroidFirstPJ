@@ -2,6 +2,7 @@ package com.example.androidfirstpj;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,7 +20,8 @@ public class OtherActivity extends AppCompatActivity implements AdapterView.OnIt
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.activity_main);
+                Intent intent = new Intent(OtherActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }
